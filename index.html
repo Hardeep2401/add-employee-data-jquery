@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-md-2 align">
+                <form id="myForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control w-75" id="firstName" placeholder="first name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control w-75" id="lastName" placeholder="last name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control w-75" id="email" placeholder="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" class="form-control w-75" id="phone" placeholder="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="submit" disabled="true">submit</button>
+                        <button class="btn btn-primary" id="clear">clear</button>
+                    </div>
+                </form>
+
+                <table class="table table-striped  table-condensed " id="Table">
+                    <thead>
+                        <tr>
+                            <th> <input type="checkbox" class="selectAll"></th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal body -->
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="updateForm">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control w-75" id="firstname"
+                                            placeholder="first name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control w-75" id="lastname"
+                                            placeholder="last name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control w-75" id="mail" placeholder="email"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="number" class="form-control w-75" id="mobile" placeholder="phone"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary" id="update">update</button>
+                                        <button type="button" class="btn btn-primary" id="cancel"
+                                            data-bs-dismiss="modal">cancel</button>
+                                    </div>
+                                    <span class="text-success d-none success">updated successfully...</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./JQuery/jquery-3.6.1.min.js"></script>
+    <script src="./JQuery/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
